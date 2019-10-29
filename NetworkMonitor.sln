@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29123.88
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetworkMonitor.WorkerService", "NetworkMonitor.WorkerService\NetworkMonitor.WorkerService.csproj", "{7AB60495-63AF-4EFD-B348-93F51DF6F790}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkMonitor.Sampling", "NetworkMonitor.Sampling\NetworkMonitor.Sampling.csproj", "{DCCA6D5A-8676-4AE2-9291-D977CCE8B4C3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7AB60495-63AF-4EFD-B348-93F51DF6F790}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AB60495-63AF-4EFD-B348-93F51DF6F790}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AB60495-63AF-4EFD-B348-93F51DF6F790}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AB60495-63AF-4EFD-B348-93F51DF6F790}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCCA6D5A-8676-4AE2-9291-D977CCE8B4C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCCA6D5A-8676-4AE2-9291-D977CCE8B4C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCCA6D5A-8676-4AE2-9291-D977CCE8B4C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCCA6D5A-8676-4AE2-9291-D977CCE8B4C3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {68499086-AFA0-421A-A403-4D8C58BBE9A6}
+	EndGlobalSection
+EndGlobal

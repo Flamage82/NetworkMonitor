@@ -1,6 +1,6 @@
-﻿using System;
+using System;
 
-namespace NetworkMonitor
+namespace NetworkMonitor.Sampling
 {
     public class Settings
     {

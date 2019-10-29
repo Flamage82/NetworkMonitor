@@ -1,0 +1,10 @@
+﻿{
+  "profiles": {
+    "NetworkMonitor.WorkerService": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
