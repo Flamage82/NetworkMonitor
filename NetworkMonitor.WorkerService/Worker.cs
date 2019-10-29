@@ -25,16 +25,29 @@ namespace NetworkMonitor.WorkerService
 
         protected override async Task ExecuteAsync(CancellationToken cancellationToken)
         {
-            while (!cancellationToken.IsCancellationRequested)
+            try
             {
-                await sampler.Execute();
-                try
+                if (settings.Value.ScanInterval == default)
                 {
-                    await Task.Delay(settings.Value.ScanInterval, cancellationToken);
+                    throw new ArgumentException("ScanInterval must not be zero");
                 }
-                catch (TaskCanceledException)
+
+                while (!cancellationToken.IsCancellationRequested)
                 {
+                    await sampler.Execute();
+                    try
+                    {
+                        await Task.Delay(settings.Value.ScanInterval, cancellationToken);
+                    }
+                    catch (TaskCanceledException)
+                    {
+                    }
                 }
+            }
+            catch (Exception ex)
+            {
+                logger.LogCritical(ex, "A fatal error has occurred");
+                throw;
             }
         }
     }

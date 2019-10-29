@@ -25,14 +25,14 @@ namespace NetworkMonitor.Sampling
 
         public async Task Execute()
         {
-            logger.LogInformation("Ping");
+            logger.LogDebug("Ping");
             var ipAddress = IPAddress.Parse("10.171.150.100");
             var options = new PingOptions
             {
                 Ttl = 2
             };
             var reply = await ping.SendPingAsync(ipAddress, 3000, sendBuffer, options);
-            logger.LogDebug("Ping: {Milliseconds}", reply.RoundtripTime);
+            logger.LogInformation("Ping: {Milliseconds}", reply.RoundtripTime);
         }
     }
 }

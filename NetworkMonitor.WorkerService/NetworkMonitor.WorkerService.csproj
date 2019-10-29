@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
     <UserSecretsId>dotnet-NetworkMonitor.WorkerService-1041B00C-5E2B-4D47-A869-E72DB7F9AFDD</UserSecretsId>
+    <AssemblyName>networkmonitor</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
